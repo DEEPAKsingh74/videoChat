@@ -1,0 +1,134 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+html, body{
+   width:100%;
+   height:100%;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.chat-wrapper{
+	width: 80%;
+	height: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.header{
+	width: 70%;
+	height: 10%;
+	background-color: rgb(58, 58, 58);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.header > button{
+	border: none;
+	outline: none;
+	padding: 0.3rem 1rem;
+	margin-right: 5%;
+	border-radius: 3px;
+	background-color: rgb(52, 168, 222);
+	color: white;
+}
+.header > button > a{
+	color: white;
+	text-decoration: none;
+}
+.body{
+	width: 70%;
+	height: 80%;
+	background-color: rgba(118, 164, 165, 0.237);
+	padding: 1rem;
+	overflow-y: auto;
+}
+.body::-webkit-scrollbar{
+	width: 10px;
+}
+
+.footer{
+	width: 70%;
+	height: 10%;
+	background-color: rgb(58, 58, 58);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.footer > input{
+	width: 70%;
+	height: 60%;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	padding: 0.1rem 1rem;
+}
+.footer > button{
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	padding: 0.2rem 1rem;
+	font-weight: bolder;
+	background-color: rgb(52, 168, 222);
+	color: white;
+	cursor: pointer;
+}
+.stranger{
+	width: 100%;
+	margin: 0.8rem 0;
+}
+.stranger > p{
+	width: fit-content;
+	max-width: 55%;
+	background-color: white;
+	padding: 0.3rem 0.5rem;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: monospace;
+
+}
+.you{
+	width: 100%;
+	margin: 0.8rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.you > p{
+	max-width: 55%;
+	background-color: rgb(228, 70, 70);
+	padding: 0.3rem 0.5rem;
+	border-radius: 3px;
+	color: white;
+	font-size: 14px;
+	font-family:monospace;
+}
+.connecting{
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 0.5px white;
+	color: rgb(52, 168, 222);
+}
+.chat-load-img{
+	width: 30%;
+	aspect-ratio: 1.4/1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.disconnect{
+	padding: 0.3rem 1rem;
+	border-radius: 4px;
+	background-color: rgb(54, 54, 54);
+	color: rgb(52, 168, 222);
+	margin: auto;
+	font-weight: bold;
+}

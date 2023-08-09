@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/videoChat.css">
+	<script src="./javascript/socket.io.js"></script>
+	<script src="./javascript/jquery-3.6.4.min.js"></script>
+	<title>Video Chat</title>
+</head>
+<body>
+
+	<div class="video-user">
+		<div class="remote">
+			<div class="local"></div>
+			<div class="control-btns">
+				<img src="./images/chat.png" alt="" id="chat-msg">
+				<img src="./images/mic.png" alt="" id="mic">
+				<img src="./images/call.png" alt="" id="call">
+				<img src="./images/video.png" alt="" id="video">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="chat-messages">
+		<div class="new-chat"><button class="cut-chat">X</button><button id="new-chat">New chat</button></div>
+		<div class="body">
+			
+		</div>
+		<div class="input-message">
+			
+		</div>
+		<p><img src="./images/secure.png" alt="">Be genuine and kind any type of misleading or nudity is prohibited. </p>
+	</div>
+
+	<script src="./javascript/video-chat.js"></script>
+	
+</body>
+</html>
